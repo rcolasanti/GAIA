@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-   index.html
+   TopNav01.html
    
-   Copyright 2019 Ric <ric@Hp>
+   Copyright 2018 Dr Ric colasanti <tutor.colasanti@gmail.com>
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -24,14 +24,68 @@
 -->
 
 <head>
-<meta charset="utf-8" />
-<title>untitled</title>
-<meta name="generator" content="Geany 1.34.1" />
+    <title>Dr Colasanti</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"  href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-
 <body>
-    <h2>GAIA</h2>
+
+    <div class="topnav" id="topnav" >
+<!--
+        id are case sensitive 
+-->
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+      <a href="#About" onclick="toggleMenu()">About</a>
+    </div>
+
+ 
+    <div class="content" id="About">
+    
+<!--
+    About
+-->
+
+
+
+    <div class="panel gray">
+        <h2>GAIA</h2>
+        <div class="flex-container-collapse" >
+            <div style="flex-grow: 2">
+                <img class="round-image" border="0" src="images/riccolasanti.jpg" alt="Gaia image" width="160" height="160" class="img-circle">
+            </div> <!-- flex -->
+            <div style="flex-grow: 8">
+                <p>A cellular automata implementation of James Lovelock's GAIA model</p>
+            </div> <!-- flex -->
+        </div> <!-- flex-container -->
+    </div> <!-- panel -->
+<!--
+    Employment
+-->
+    <div id="Ground" class="panel white">
+        <h2>Ground</h2>
+        <p></p>
+    </div>
+
+<!--
+    footer
+-->
+    <div class="footer">
+        <div class="flex-container" >
+            <div style="flex-grow: 8">
+                <a class="links" href="https://www.cardiff.ac.uk/part-time-courses-for-adults"></a>
+            </div> <!-- flex -->
+            <div style="flex-grow: 1">
+                <img src="images/logo.png" alt="gaia logo" style="float:right;width:42px;height:42px;">
+            </div> <!-- flex -->
+        </div> <!-- flex-container -->
+    </div> <!-- footer -->
+
+
+<script src="js/main.js"></script>
 
 </body>
-
 </html>
